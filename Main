@@ -1,0 +1,11 @@
+ internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Starter.Start();
+            Logger log = new Logger();
+            Console.ReadKey();
+           
+        }
+    }
+}
