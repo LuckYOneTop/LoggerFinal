@@ -2,9 +2,6 @@ internal class Actions
     {
         Logger logger = new Logger();
         Result Result = new Result();
-
-     
-
         public bool Start()
         {
             logger.LgInfo("Start record");

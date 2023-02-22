@@ -1,27 +1,27 @@
 internal class Logger
     {
-        public string MEror { get; set; }
-        public string MInfo { get; set; }
-        public string MWarning { get; set; }
+        public string MessegeEror { get; set; }
+        public string MessegeInfo { get; set; }
+        public string MessegeWarning { get; set; }
         public Logger()
         {
-            MEror = "";
-            MWarning = "";
-            MInfo = "";
+            MessegeEror = "";
+            MessegeWarning = "";
+            MessegeInfo = "";
 
         }
         public void LgEror (string messege)
         {
-            MEror += messege + "";
+            MessegeEror += messege + "";
 
         }
         public void LgInfo (string messege)
         {
-            MInfo += messege + "";
+            MessegeInfo += messege + "";
         }
         public void LgWarning (string messege)
         {
-            MWarning += messege + "";
+            MessegeWarning += messege + "";
         }
         public void Log (string type, string messege)
         {
@@ -29,9 +29,9 @@ internal class Logger
         }
         public void TXT()
         {
-            File.WriteAllText("log.txt", MEror);
-            File.WriteAllText("log.txt", MInfo);
-            File.WriteAllText("log.txt", MWarning);
+            File.WriteAllText("log.txt", MessegeEror);
+            File.WriteAllText("log.txt", MessegeInfo);
+            File.WriteAllText("log.txt", MessegeWarning);
         }
     }
 }
