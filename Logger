@@ -1,0 +1,37 @@
+internal class Logger
+    {
+        public string MessegeEror { get; set; }
+        public string MessegeInfo { get; set; }
+        public string MessegeWarning { get; set; }
+        public Logger()
+        {
+            MessegeEror = "";
+            MessegeWarning = "";
+            MessegeInfo = "";
+
+        }
+        public void LgEror (string messege)
+        {
+            MessegeEror += messege + "";
+
+        }
+        public void LgInfo (string messege)
+        {
+            MessegeInfo += messege + "";
+        }
+        public void LgWarning (string messege)
+        {
+            MessegeWarning += messege + "";
+        }
+        public void Log (string type, string messege)
+        {
+            Console.WriteLine("{ DataTime.Now}: { type}: { messege}");
+        }
+        public void TXT()
+        {
+            File.WriteAllText("log.txt", MessegeEror);
+            File.WriteAllText("log.txt", MessegeInfo);
+            File.WriteAllText("log.txt", MessegeWarning);
+        }
+    }
+}

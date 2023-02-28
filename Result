@@ -1,0 +1,11 @@
+internal class Result
+    {
+        private bool _SLog;
+        public string _result = "I dont find Logic";
+        public bool Status
+        {
+            get { return _SLog; }
+            set { _SLog = value; }
+        }
+    }
+}

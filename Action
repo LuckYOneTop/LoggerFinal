@@ -1,0 +1,32 @@
+internal class Actions
+    {
+        Logger logger = new Logger();
+        Result Result = new Result();
+        public bool Start()
+        {
+            logger.LgInfo("Start record");
+            Result.Status = true;
+            bool status = Result.Status;
+
+            return status;
+        }
+        public bool Begin()
+        {
+            logger.LgWarning("I cant see logic in method");
+            
+
+            Result.Status = true;
+            bool status = Result.Status;
+
+            return status;
+        }
+        public bool End()
+        {
+            logger.LgEror("I dont find a logic")
+            Result.Status = false;
+            bool status = Result.Status;
+            return status;
+        }
+        
+    }
+}
